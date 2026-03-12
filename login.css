@@ -1,0 +1,180 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* FONDO GENERAL */
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("img/hero.jpg");
+
+background-size:cover;
+
+}
+
+
+
+/* CONTENEDOR LOGIN */
+
+.contenedorLogin{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+width:100%;
+
+}
+
+
+
+/* CAJA LOGIN */
+
+.loginBox{
+
+background:white;
+
+padding:40px;
+
+border-radius:10px;
+
+width:350px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+animation:aparecer 0.5s;
+
+}
+
+
+
+/* TITULO */
+
+.loginBox h1{
+
+margin-bottom:10px;
+
+color:#0c2d48;
+
+}
+
+.loginBox p{
+
+margin-bottom:30px;
+
+color:#555;
+
+}
+
+
+
+/* INPUTS */
+
+.loginBox input{
+
+width:100%;
+
+padding:12px;
+
+margin-bottom:15px;
+
+border:1px solid #ccc;
+
+border-radius:5px;
+
+font-size:14px;
+
+}
+
+
+
+/* BOTON LOGIN */
+
+.loginBox button{
+
+width:100%;
+
+padding:12px;
+
+background:#27ae60;
+
+border:none;
+
+color:white;
+
+font-size:16px;
+
+border-radius:5px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.loginBox button:hover{
+
+background:#1e8449;
+
+}
+
+
+
+/* VOLVER */
+
+.volver{
+
+margin-top:20px;
+
+}
+
+.volver a{
+
+text-decoration:none;
+
+color:#0c2d48;
+
+font-size:14px;
+
+}
+
+
+
+/* ANIMACION */
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}

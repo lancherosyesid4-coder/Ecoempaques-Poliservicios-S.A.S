@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Ecoempaques Poliservicios S.A.S</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav class="navbar">
+
+<img src="img/logo.png" class="logo">
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#categorias">Productos</a></li>
+<li><a href="#catalogo">Catálogo</a></li>
+<li><a href="#empresas">Empresas</a></li>
+<li><a href="#comentarios">Comentarios</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- INICIO -->
+
+<section id="inicio" class="inicio">
+
+<h1>Ecoempaques Poliservicios S.A.S</h1>
+
+<p>
+
+Empresa dedicada a la distribución de soluciones ecológicas y empaques
+biodegradables para empresas comprometidas con el medio ambiente.
+
+</p>
+
+</section>
+
+
+
+<!-- CATEGORIAS ECOLOGICAS -->
+
+<section id="categorias" class="categorias">
+
+<h2>Nuestros Productos Ecológicos</h2>
+
+<div class="gridCategorias">
+
+<div class="categoria">
+
+<img src="img/compostables.png">
+<h3>Compostables Maíz</h3>
+
+</div>
+
+<div class="categoria">
+
+<img src="img/ecologicas.png">
+<h3>Ecológicas</h3>
+
+</div>
+
+<div class="categoria">
+
+<img src="img/reutilizables.png">
+<h3>Reutilizables</h3>
+
+</div>
+
+<div class="categoria">
+
+<img src="img/oxodegradables.png">
+<h3>Plásticas Oxodegradables</h3>
+
+</div>
+
+<div class="categoria">
+
+<img src="img/reciclaje.png">
+<h3>Reciclaje</h3>
+
+</div>
+
+<div class="categoria">
+
+<img src="img/procesos.png">
+<h3>Procesos de Producción</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CATALOGO -->
+
+<section id="catalogo" class="catalogo">
+
+<h2>Catálogo de Bolsas</h2>
+
+<div class="productos">
+
+
+<div class="producto"
+onclick="abrirProducto('Bolsa Compostable','Bolsas fabricadas con materiales biodegradables amigables con el medio ambiente.')">
+
+<img src="img/bolsa1.png">
+
+<h3>Bolsa Compostable</h3>
+
+</div>
+
+
+<div class="producto"
+onclick="abrirProducto('Bolsa Ecológica','Bolsas resistentes ideales para supermercados y comercios.')">
+
+<img src="img/bolsa2.png">
+
+<h3>Bolsa Ecológica</h3>
+
+</div>
+
+
+<div class="producto"
+onclick="abrirProducto('Rollos Biodegradables','Rollos utilizados para alimentos y productos de mercado.')">
+
+<img src="img/bolsa3.png">
+
+<h3>Rollos Biodegradables</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- MODAL PEDIDO -->
+
+<div id="modalProducto" class="modal">
+
+<div class="modalContenido">
+
+<span class="cerrar" onclick="cerrarProducto()">X</span>
+
+<h2 id="tituloProducto"></h2>
+
+<p id="descripcionProducto"></p>
+
+<input type="text" id="empresaPedido" placeholder="Nombre de la empresa">
+
+<select id="tipoPedido">
+
+<option value="bolsas">Bolsas</option>
+<option value="rollos">Rollos</option>
+
+</select>
+
+<select id="tamanoPedido">
+
+<option>Pequeño</option>
+<option>Mediano</option>
+<option>Grande</option>
+
+</select>
+
+<input type="number" id="cantidadPedido" placeholder="Cantidad">
+
+<button onclick="hacerPedido()">
+Realizar Pedido
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- EMPRESAS -->
+
+<section id="empresas" class="empresas">
+
+<h2>Empresas que confían en nosotros</h2>
+
+<div class="logosEmpresas">
+
+<img src="img/empresa1.png">
+<img src="img/empresa2.png">
+<img src="img/empresa3.png">
+<img src="img/empresa4.png">
+
+</div>
+
+</section>
+
+
+
+<!-- COMENTARIOS -->
+
+<section id="comentarios" class="comentarios">
+
+<h2>Opiniones de nuestros clientes</h2>
+
+<div class="formComentario">
+
+<input type="text" id="nombreComentario" placeholder="Nombre o empresa">
+
+<textarea id="textoComentario" placeholder="Escribe tu comentario"></textarea>
+
+<button onclick="agregarComentario()">
+Enviar Comentario
+</button>
+
+</div>
+
+<div id="listaComentarios">
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACTO -->
+
+<section id="contacto" class="contacto">
+
+<h2>Contáctanos</h2>
+
+<p>📱 3222112282</p>
+
+<p>📧 poliservicios@outlook.com</p>
+
+<p>📷 @ecoempaquespoliservicios</p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 Ecoempaques Poliservicios S.A.S
+
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

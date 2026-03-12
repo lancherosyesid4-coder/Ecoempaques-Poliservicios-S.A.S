@@ -1,0 +1,201 @@
+/* ESTILO GENERAL */
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:0;
+
+}
+
+
+
+/* HEADER PANEL */
+
+.panelHeader{
+
+background:#1e3c72;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.panelHeader h1{
+
+margin:0;
+font-size:24px;
+
+}
+
+.volver{
+
+color:white;
+text-decoration:none;
+background:#2ecc71;
+padding:8px 15px;
+border-radius:5px;
+
+}
+
+
+
+/* SECCION AGREGAR PEDIDO */
+
+.agregarPedido{
+
+background:white;
+margin:30px;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.agregarPedido h2{
+
+margin-top:0;
+
+}
+
+
+
+.formPedido{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+
+}
+
+.formPedido input,
+.formPedido select{
+
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
+
+}
+
+
+
+.formPedido button{
+
+background:#27ae60;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+font-size:15px;
+
+}
+
+.formPedido button:hover{
+
+background:#219150;
+
+}
+
+
+
+/* TABLA PEDIDOS */
+
+.panelPedidos{
+
+background:white;
+margin:30px;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.panelPedidos h2{
+
+margin-top:0;
+
+}
+
+
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+th{
+
+background:#1e3c72;
+color:white;
+padding:12px;
+
+}
+
+td{
+
+padding:10px;
+text-align:center;
+border-bottom:1px solid #eee;
+
+}
+
+
+
+tr:hover{
+
+background:#f9f9f9;
+
+}
+
+
+
+/* BOTON CAMBIAR */
+
+td button{
+
+background:#3498db;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+td button:hover{
+
+background:#2980b9;
+
+}
+
+
+
+/* ESTADOS */
+
+.estadoPendiente{
+
+color:#e67e22;
+font-weight:bold;
+
+}
+
+.estadoEnviado{
+
+color:#3498db;
+font-weight:bold;
+
+}
+
+.estadoEntregado{
+
+color:#2ecc71;
+font-weight:bold;
+
+}

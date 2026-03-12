@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Panel Administrativo - EcoEmpaques</title>
+
+<link rel="stylesheet" href="panel.css">
+
+</head>
+
+<body>
+
+<header class="panelHeader">
+
+<h1>Panel de Administración de Pedidos</h1>
+
+<a href="index.html" class="volver">Volver al Inicio</a>
+
+</header>
+
+
+
+<!-- AGREGAR PEDIDO MANUAL -->
+
+<section class="agregarPedido">
+
+<h2>Agregar Pedido Manual</h2>
+
+<div class="formPedido">
+
+<input type="text" id="empresaManual" placeholder="Nombre de la empresa">
+
+<input type="text" id="productoManual" placeholder="Producto">
+
+<select id="tipoManual">
+
+<option value="bolsas">Bolsas</option>
+<option value="rollos">Rollos</option>
+
+</select>
+
+<select id="tamanoManual">
+
+<option value="Pequeño">Pequeño</option>
+<option value="Mediano">Mediano</option>
+<option value="Grande">Grande</option>
+
+</select>
+
+<input type="number" id="cantidadManual" placeholder="Cantidad">
+
+<button onclick="agregarPedidoManual()">
+Agregar Pedido
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- TABLA DE PEDIDOS -->
+
+<section class="panelPedidos">
+
+<h2>Pedidos Recibidos</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Empresa</th>
+<th>Producto</th>
+<th>Tipo</th>
+<th>Tamaño</th>
+<th>Cantidad</th>
+<th>Estado</th>
+<th>Acción</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaPedidos">
+
+</tbody>
+
+</table>
+
+</section>
+
+
+
+<script src="panel.js"></script>
+
+</body>
+
+</html>
